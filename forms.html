@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Completo</title>
+
+```
+<style>
+    /* RESET */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    /* BODY */
+    body {
+        background: linear-gradient(135deg, #ffd1ec, #ff9ad5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    /* CONTAINER */
+    .container {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        width: 100%;
+        max-width: 500px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 10px;
+        color: #ff4fbf;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #555;
+    }
+
+    /* CAMPOS */
+    .form-group {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input, select, textarea {
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    /* FOCO */
+    input:focus, select:focus, textarea:focus {
+        border-color: #ff4fbf;
+        box-shadow: 0 0 5px #ff4fbf;
+    }
+
+    /* BOTÕES */
+    .buttons {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    button {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .btn-enviar {
+        background-color: #ff4fbf;
+        color: white;
+    }
+
+    .btn-enviar:hover {
+        background-color: #e043a8;
+    }
+
+    .btn-limpar {
+        background-color: #ccc;
+    }
+
+    .btn-limpar:hover {
+        background-color: #aaa;
+    }
+
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<div class="container">
+
+    <h1>Formulário de Cadastro 💖</h1>
+    <p>Preencha seus dados abaixo</p>
+
+    <form>
+
+        <!-- NOME -->
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- SENHA -->
+        <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" required>
+        </div>
+
+        <!-- DATA -->
+        <div class="form-group">
+            <label for="data">Data de nascimento</label>
+            <input type="date" id="data" name="data">
+        </div>
+
+        <!-- SELECT -->
+        <div class="form-group">
+            <label for="curso">Curso</label>
+            <select id="curso" name="curso">
+                <option value="">Escolha...</option>
+                <option value="ads">ADS</option>
+                <option value="si">Sistemas de Informação</option>
+                <option value="eng">Engenharia</option>
+            </select>
+        </div>
+
+        <!-- RADIO -->
+        <div class="form-group">
+            <label>Gênero</label>
+            <label><input type="radio" name="genero" value="f"> Feminino</label>
+            <label><input type="radio" name="genero" value="m"> Masculino</label>
+        </div>
+
+        <!-- CHECKBOX -->
+        <div class="form-group">
+            <label>Interesses</label>
+            <label><input type="checkbox" name="interesse"> Programação</label>
+            <label><input type="checkbox" name="interesse"> Design</label>
+            <label><input type="checkbox" name="interesse"> Jogos</label>
+        </div>
+
+        <!-- FILE -->
+        <div class="form-group">
+            <label for="arquivo">Enviar arquivo</label>
+            <input type="file" id="arquivo" name="arquivo">
+        </div>
+
+        <!-- TEXTAREA -->
+        <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+        </div>
+
+        <!-- BOTÕES -->
+        <div class="buttons">
+            <button type="submit" class="btn-enviar">Enviar</button>
+            <button type="reset" class="btn-limpar">Limpar</button>
+        </div>
+
+    </form>
+
+</div>
+```
+
+</body>
+</html>
